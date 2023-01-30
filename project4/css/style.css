@@ -1,0 +1,463 @@
+/* * {
+    font-family: 'Montserrat', sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Poppins', sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.header-info {
+    padding-top: 15%;
+}
+
+.header-info h2 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-info p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+} 
+
+.header-info p::after {
+    content: "";
+    animation: header-animation 10s linear infinite;
+}
+
+@keyframes header-animation {
+    0% {content:"Dev |"; font-weight: 400;}
+    10% {content:"Develo |"; font-weight: 400;}
+    20% {content:"Developer |"; font-weight: 400;}
+    30% {content:"|"; font-weight: 400;}
+    40% {content:"Desi |"; font-weight: 400;}
+    50% {content:"Designer |"; font-weight: 400;}
+    60% {content:"|"; font-weight: 400;}
+    70% {content:"Abd |"; font-weight: 400;}
+    80% {content:"Abdelr |"; font-weight: 400;}
+    90% {content:"Abelrahm |"; font-weight: 400;}
+    100% {content:"Abdelrahman |"; font-weight: 400;}
+}
+
+
+
+.header-icons ul li a i{
+    color: white;
+}
+
+.header-icons .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 3px;
+}
+
+#about {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-info .progress {
+    height: 1.5rem;
+}
+
+.about-info .bar-color {
+    background-color:#1c1c1c;
+    color: white;
+    padding-top: 4px;
+}
+
+.bar-color p {
+    font-size: 12px;
+}
+
+.about-info-text h3 {
+    font-weight: 800;
+}
+
+.about-info-text p{
+    color: #999;
+    font-size: 15px;
+}
+
+.about-btns .btn1 {
+    color: white;
+    background-color: #1c1c1c;
+    font-size: 14px;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.btn1:hover{
+    color: #000;
+    border: #000 solid 1px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-btns .btn2 {
+    color: #000;
+    border: #000 solid 1px;
+    background-color: white;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #1c1c1c;
+}
+
+#services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #f5f5f5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.card-icon {
+    margin-left: 40%;
+    background-color: #f5f5f5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.card-body .card-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #999;
+}
+
+.card:hover .card-icon {
+    color: white;
+    background-color: #000;
+}
+
+#works {
+    padding-top: 5rem;
+}
+
+.nav-item a {
+    color: #000;
+}
+
+#works .nav-pills .nav-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+#works .nav-pills .nav-link.active{
+    color: #000;
+    background-color: white;
+    cursor: pointer;
+}
+
+#works .nav-pills .nav-link.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+
+}
+
+.all-imgs {
+    position: relative;
+    overflow: hidden;
+}
+
+.all-imgs .layer {
+    width: 95%;
+    height: 95%;
+    transition:0.5s ease-in-out;
+}
+
+.all-imgs:hover .layer{
+    position: absolute;
+    background-color: white;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.all-imgs-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-text .all-imgs-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    transition: 0.5s;
+}
+
+.all-imgs-icon:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.all-imgs-text h5 {
+    font-size: 14px;
+}
+
+.all-imgs-text {
+    position:absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.all-imgs:hover .all-imgs-text {
+    position:absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.all-imgs-icons {
+    position:absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.all-imgs:hover .all-imgs-icons {
+    position:absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#clients{
+    padding-top: 5rem;
+     padding-bottom: 5rem;
+     background-color: #f5f5f5;
+}
+
+#clients .slider-text {
+    padding-top: 5rem;
+    width: 87%;
+    margin: auto;
+    color: #999;
+}
+
+.slider-text h6 {
+    color: #1c1c1c;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.slider-text p{
+    font-size: 16px;
+}
+
+#clients .carousel-indicators [data-bs-target] {
+    
+    background-color: tomato;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.clients-numbers {
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+
+.clients-numbers .users i{
+    font-size: 30px;
+}
+
+.clients-numbers .users p{
+    font-weight: 500;
+    color: #999;
+    padding-top: 15px;
+}
+
+.clients-numbers .users h4 {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 15px;
+}
+
+#blog {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #f5f5f5;
+}
+
+#blog .read-btn {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+#blog .read-btn::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+#blog .card, #blog .card-img {
+    overflow: hidden;
+}
+
+#blog .card img {
+    transition: 0.5s;
+}
+
+#blog .card img:hover {
+    transform: scale(1.2);
+}
+
+#contact {
+    padding-top: 5rem;
+}
+
+#contact .contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #000;
+    background-color: #f5f5f5;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact-icon {
+    margin-bottom: 10px;
+    margin-left: 42%;
+    transition: 0.5s;
+}
+
+#contact h6 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#contact p {
+    color: #999;
+}
+
+#contact .contact-hover:hover .contact-icon{
+    color: white;
+    background-color: #000;
+}
+
+#contact .row{
+    padding-bottom: 5rem;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+.form input, .form textarea{
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.form .btn {
+    font-size: 12px;
+    padding: 10px 40px;
+    transition: 0.5s;
+}
+
+.form .btn:hover {
+    color: #000;
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer{
+    font-size: 12px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    text-align: center;
+    align-items: center;
+}
